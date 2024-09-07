@@ -12,4 +12,4 @@ function Scrape-Page {
     $results[0..4]
 }
 
-Scrape-Page -url "https://azure.microsoft.com/en-us/blog/content-type/announcements/" -filterURL "/blog/.*"
+$AzureNews = Scrape-Page -url "https://azure.microsoft.com/en-us/blog/content-type/announcements/" -filterURL "/blog/.*"
